@@ -1,0 +1,157 @@
+.search-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  position: relative;
+  top: 5rem;
+}
+
+.search-input {
+  min-width: 30%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px white,
+  inset 1px 1px 3px black;
+  background-color: #0c121d;
+  color: whitesmoke;
+}
+
+.search-input::placeholder {
+  color: rgba(245, 245, 245, 0.596);
+}
+
+.search-btn {
+  box-shadow: -1px -1px 3px white,
+  inset 1px 1px 5px black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  min-width: 8%;
+  background-color: #566b8f;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #0c121d;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+  box-shadow: -1px -1px 3px white,
+  inset 3px 3px 5px black;
+  font-size: 1.1rem;
+}
+
+.white {
+  color: white;
+}
+
+.githubUserInfo {
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: 10rem;
+  background-color: #121b2b3d;
+  box-shadow: inset -1px -1px 5px black,
+  inset 2px 2px 5px black;
+}
+
+.bottom {
+  max-width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  /* flex-direction: column;
+  row-gap: 1rem; */
+  justify-content: space-around;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  background-color: #566b8f28;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.top {
+  text-align: center;
+}
+
+.left, .right {
+  border-radius: 5px;
+  position: relative;
+  max-width: 100%;
+  /* background-color: #566b8f; */
+  padding: 0.5rem;
+}
+
+img {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+#bio {
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: #566b8f;
+}
+
+h3 {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  text-align: center;
+}
+
+h5 {
+  color: #FB9DA0;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  margin-top: -1rem;
+  
+}
+
+a {
+  text-decoration: 1px underline #FB9DA0;
+}
+
+.error {
+  position: relative;
+  top: 10rem;
+}
+
+@media screen and (max-width: 950px){
+  /* .bottom {
+    flex-direction: column;
+    min-width: 80%;
+    row-gap: 1rem;
+  } */
+
+  .left, .right {
+    min-width: 80%;
+  }
+
+  .githubUserInfo {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom {
+    flex-direction: column;
+    min-width: 80%;
+    row-gap: 1rem;
+    justify-content: center;
+  }
+
+  .left, .right {
+    flex-direction: column;
+    min-width: 98%;
+    padding: 0.2rem;
+  }
+}
